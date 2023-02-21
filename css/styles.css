@@ -66,34 +66,30 @@ button {
 }
 
 .container {
-  width: 100%;
+  max-width: 428px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 428px;
-  }
-}
+
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1158px;
+    max-width: 1158px;
   }
 }
 
 /*Header*/
 .logo,
 .header-elements {
-  height: 22px;
+ 
 }
 
 .web {
@@ -277,15 +273,11 @@ button {
   }
 
   .page-header {
-    width: 100%;
-    position: fixed;
-    padding-top: 24px;
-    padding-bottom: 22px;
-    left: 0;
-    top: 0;
+  
+  
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
-    z-index: 100;
+   
   }
 
   .header-elements,
@@ -457,7 +449,6 @@ button {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    margin-top: 70px;
     padding-top: 112px;
     padding-bottom: 108px;
   }
@@ -470,7 +461,7 @@ button {
   .main-header {
     margin-bottom: 40px;
     font-size: 56px;
-    line-height: 1.07;
+    line-height: 1.07;hero
   }
 }
 
@@ -482,7 +473,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/hero-bg-tab-2x.jpg);
+      url(../img/hero-bg-tab-2x.jpg)
   }
 }
 
@@ -502,6 +493,8 @@ button {
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    max-width: 1440px;
+    margin: 0 auto;
   }
 
   .main-header {
@@ -525,65 +518,61 @@ button {
 }
 
 /*Benefits Mobile*/
-.hide {
-  display: none;
+.hidden-title {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
+
+
 
 @media screen and (max-width: 1199px) {
-  .bnf-icon-list,
-  .third-header {
+  .bnf-div {
     display: none;
-  }
 }
 
-@media screen and (max-width: 767px) {
-  .bnfts-box {
-    padding-top: 96px;
-    padding-bottom: 96px;
-  }
 
-  .benefits {
-    display: flex;
-    flex-direction: column;
-    gap: 72px;
-  }
-
-  .bnft-mob-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    color: var(--header-color);
-    margin-bottom: 8px;
-  }
-
-  .bnft-item-text {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--main-text-color);
-  }
+.bnfts-box {
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
+
+.third-header  {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+}
+}
+
+
 
 /*Benefits Tablet*/
 
 @media screen and (min-width: 768px) {
-  .bnfts-box {
-    padding-top: 96px;
-    padding-bottom: 96px;
+
+
+  
+  .bnf-icon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 72px 24px;
   }
 
-  .benefits {
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 24px;
+  .third-header {
+    text-align: left;
   }
 
   .bnft-item-text {
-    width: 356px;
+    width: calc((100% - 24px) / 2);
   }
 }
 
@@ -594,9 +583,15 @@ button {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+}
 
-  .bnft-mob-header {
-    display: none;
+  .third-header {
+  
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
   }
 
   .bnf-icon-list {
@@ -609,23 +604,26 @@ button {
     margin-bottom: 8px;
   }
 
-  .bnf-item {
-    display: flex;
-    width: 264px;
-    height: 112px;
-    margin-top: 0;
-    align-items: center;
-    justify-content: center;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
-  }
-
   .bnft-item-text {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
     width: 264px;
     margin-top: 8px;
   }
-}
+
+  .bnf-div {
+
+    height: 112px;
+    background-color: #F4F4FD;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    
+   }
 
 /*Benefits Mobile/Tablet*/
 @media screen and (max-width: 1199px) {
@@ -733,7 +731,7 @@ button {
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-  }
+  }justi
 }
 
 /*Customers-Mobile*/
@@ -749,6 +747,7 @@ button {
   justify-content: center;
   row-gap: 72px;
   column-gap: 16px;
+  justify-content: center;
 }
 
 .customers-item-link {
@@ -773,9 +772,7 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers-list {
-    width: 555px;
-    margin-left: auto;
-    margin-right: auto;
+    
     column-gap: 24px;
   }
 }
