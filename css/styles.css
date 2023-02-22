@@ -636,12 +636,12 @@ button {
   }
 
   @media screen and (max-width: 1199px) {
-    .dnf-div {
+    .bnf-div {
    display: none;
    }
    }
 
-   
+
   .bnf-div {
     width: 264px;
     height: 112px;
