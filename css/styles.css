@@ -518,7 +518,7 @@ button {
   }
 }
 
-/*Benefits Mobile*/
+/*Benefits*/
 .hidden-title {
   position: absolute;
   white-space: nowrap;
@@ -538,10 +538,9 @@ button {
 }
 
 .bnf-div {
+  display: none;
+}
 
-display: none;
-  
- }
 
  .bnf-item {
   display: flex;
@@ -560,9 +559,7 @@ display: none;
 
 
 @media screen and (max-width: 1199px) {
-  .bnf-div {
-    display: none;
-}
+
 
 
 .bnfts-box {
@@ -583,9 +580,7 @@ display: none;
 
 @media screen and (min-width: 768px) {
 
-.bnf-div {
-  display: none;
-}
+
   
   .bnf-icon-list {
     row-gap: 72px;
