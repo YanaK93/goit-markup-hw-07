@@ -635,6 +635,13 @@ button {
     margin-top: 8px;
   }
 
+  @media screen and (max-width: 1199px) {
+    .dnf-div {
+   display: none;
+   }
+   }
+
+   
   .bnf-div {
     width: 264px;
     height: 112px;
