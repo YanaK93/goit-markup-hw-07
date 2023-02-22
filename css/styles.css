@@ -72,8 +72,6 @@ button {
   padding-right: 15px;
 }
 
-
-
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -87,10 +85,9 @@ button {
 }
 
 /*Header*/
-.logo,
+/* .logo,
 .header-elements {
- 
-}
+} */
 
 .web {
   font-family: var(--secondary-font);
@@ -273,11 +270,8 @@ button {
   }
 
   .page-header {
-  
-  
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
-   
   }
 
   .header-elements,
@@ -462,7 +456,7 @@ button {
   .main-header {
     margin-bottom: 40px;
     font-size: 56px;
-    line-height: 1.07;hero
+    line-height: 1.07;
   }
 }
 
@@ -474,7 +468,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../img/hero-bg-tab-2x.jpg)
+      url(../img/hero-bg-tab-2x.jpg);
   }
 }
 
@@ -537,65 +531,53 @@ button {
   padding-bottom: 96px;
 }
 
-.bnf-div {
-  display: none;
-}
-
-
- .bnf-item {
+.bnf-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
- 
+
+@media screen and (max-width: 767px) {
+  .bnf-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}
 .bnf-icon-list {
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   gap: 72px;
 }
 
-
-
 @media screen and (max-width: 1199px) {
+  .bnfts-box {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
 
-
-
-.bnfts-box {
-  padding-top: 96px;
-  padding-bottom: 96px;
+  .third-header {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
 }
-
-.third-header  {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-}
-}
-
-
 
 /*Benefits Tablet*/
 
 @media screen and (min-width: 768px) {
-
-
-  
   .bnf-icon-list {
     row-gap: 72px;
-        column-gap: 24px;
-        flex-direction: row;
-        flex-wrap: wrap;
-      
-    }
+    column-gap: 24px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
-
-.bnf-item {
-  width: 326px;
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
+  .bnf-item {
+    width: 326px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
 }
 
 /*Benefits Desktop*/
@@ -607,58 +589,53 @@ button {
   }
 }
 
-  .third-header {
-  
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-  }
+.third-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+}
 
-  .bnf-icon-list {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    margin-bottom: 8px;
-  }
+.bnf-icon-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: 8px;
+}
 
-  .bnft-item-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #434455;
-    width: 264px;
-    margin-top: 8px;
-  }
+.bnft-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #434455;
+  width: 264px;
+  margin-top: 8px;
+}
 
-  @media screen and (max-width: 1199px) {
-    .bnf-div {
-   display: none;
-   }
-   }
+.bnf-div {
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
 
-
+@media screen and (max-width: 1199px) {
   .bnf-div {
-    width: 264px;
-    height: 112px;
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
-    
-   }
-
-   .bnf-item {
-    width: 264px;
+    display: none;
   }
-   
+}
 
+.bnf-item {
+  width: 264px;
+}
 
 /*Benefits Mobile/Tablet*/
 @media screen and (max-width: 1199px) {
@@ -766,7 +743,7 @@ button {
     flex-wrap: wrap;
     row-gap: 64px;
     column-gap: 24px;
-  }justi
+  }
 }
 
 /*Customers-Mobile*/
@@ -807,7 +784,6 @@ button {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .customers-list {
-    
     column-gap: 24px;
   }
 }
@@ -820,7 +796,6 @@ button {
   .customers-item-link {
     width: 168px;
     height: 88px;
-    
   }
 }
 
