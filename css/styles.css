@@ -541,39 +541,28 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
 }
 
 @media screen and (max-width: 767px) {
   .bnf-item:not(:last-child) {
     margin-bottom: 72px;
   }
- 
 }
 
 .bnf-item {
-  width: 326px;
-  
+  width: 100%;
 }
 
 .bnf-icon-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 72px;
 }
-
 
 @media screen and (max-width: 1199px) {
   .bnfts-box {
     padding-top: 96px;
     padding-bottom: 96px;
-  }
-
-  .third-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
   }
 }
 
@@ -588,9 +577,15 @@ button {
   }
 
   .bnf-item {
-    width: 326px;
+    width: 340px;
     flex-wrap: wrap;
     align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .bnf-icon-list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -605,16 +600,24 @@ button {
 
 .third-header {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 36px;
+  line-height: 1.1;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+
+@media screen and (min-width: 1200px) {
+  .third-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
 }
 
 .bnf-icon-list {
   display: flex;
   justify-content: center;
-  gap: 24px;
+  /* gap: 24px; */
   padding: 0;
   margin: 0;
   list-style: none;
@@ -622,12 +625,19 @@ button {
 }
 
 .bnft-item-text {
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  width: 264px;
+  /* width: 264px; */
   margin-top: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .bnft-item-text {
+    font-weight: 400;
+  }
 }
 
 .bnf-div {
@@ -645,10 +655,6 @@ button {
   .bnf-div {
     display: none;
   }
-}
-
-.bnf-item {
-  width: 264px;
 }
 
 /*Benefits Mobile/Tablet*/
